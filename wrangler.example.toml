@@ -1,0 +1,18 @@
+name = "notifications-service"
+main = "src/index.ts"
+compatibility_date = "2023-04-11"
+kv_namespaces = [
+	{ binding = "notifications", id = "<kv_id>", preview_id = "<preview_kv_id>"}
+]
+node_compat = true
+[vars]
+sendgrid_from_email = "noreply@yourdomain.com"
+sendgrid_contact = "yourname@yourdomain.com"
+twilio_from = "<Twilio phone number>"
+twilio_sid = "<Twilio sid>"
+twilio_to = "<Phone number to call>"
+twilio_account = "<Twilio account>"
+receiving_email_address = “<Your UptimeRobot email address>”
+application_name = "Example Downreports"
+forward_emails = ["engineer1@example.com", "engineer2@example.com", “support@example.com” ]
+key = "secret_key"
